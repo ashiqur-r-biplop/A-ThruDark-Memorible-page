@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: RobotoMono;
+    src: url(./font/RobotoMono-Light.ttf);
+  }
+.meribol-banner{
+    background-image: url(./img/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    color: white;
+}
+.meribol-banner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(247deg, rgba(0, 0, 0, 1) 100%, rgba(247, 197, 204, 1) 100%);
+    opacity: 0.4;
+}
+.meribol-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99 !important;
+    width: 100%;
+    height: 100%;
+}
+.meribol-content-box{
+    width: 50%;
+    margin: 0 auto;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: RobotoMono;
+
+}
+.meribol-content-box p{
+    letter-spacing: 2px;
+    word-spacing: 5px;
+
+}
+.meribol-content-box h1{
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-size: 36px;
+
+}
