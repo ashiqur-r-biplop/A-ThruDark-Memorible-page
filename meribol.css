@@ -143,7 +143,7 @@ select {
 .shop-grid-card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 40px 10px;
+  padding: 0px 10px 40px;
   gap: 20px;
   font-family: Aeul;
 }
@@ -202,7 +202,20 @@ select {
    
     color: #97999b;
   }
-
+.search-box{
+  padding: 30px 10px;
+  display: flex;
+  justify-content: end;
+}
+.search-box .search-box-input input {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid gray;
+  width: 240px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  color: white;
+}
 /* cards style in shop page end */
 
 @media screen and (min-width: 0px) and (max-width: 720px) {
